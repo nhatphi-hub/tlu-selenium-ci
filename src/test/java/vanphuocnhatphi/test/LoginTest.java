@@ -61,7 +61,7 @@ public class LoginTest {
         loginPage.clickLogin();
 
         // Cố tình fail
-        Assert.assertTrue(
+        Assert.assertFalse(
                 loginPage.isLoginSuccessful(),
                 "Intentional fail test!");
     }
